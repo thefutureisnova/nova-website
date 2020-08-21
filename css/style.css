@@ -214,8 +214,17 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #f5f8fd url("../img/Home Page.png") center top no-repeat;
+  background: #f5f8fd url("../img/NovaBackground.gif") center top no-repeat;
   background-size: cover;
+}
+
+#myVideo {
+  object-fit: cover;
+  position: relative;
+  right: 1000;
+  bottom: 0;
+  width: 250%;
+  height: 250%;
 }
 
 #intro .intro-info h2 {

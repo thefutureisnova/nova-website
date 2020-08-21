@@ -218,15 +218,6 @@ h6 {
   background-size: cover;
 }
 
-#myVideo {
-  object-fit: cover;
-  position: relative;
-  right: 1000;
-  bottom: 0;
-  width: 250%;
-  height: 250%;
-}
-
 #intro .intro-info h2 {
   color: #413e66;
   margin-bottom: 40px;

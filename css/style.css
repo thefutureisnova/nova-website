@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Shrikhand';
+  font-family: 'brandon-grotesque';
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -400,7 +400,7 @@ h6 {
 
 .mobile-nav .drop-down > a:after {
   content: "\f078";
-  font-family: 'Shrikhand', cursive;
+  font-family: 'brandon-grotesque';
   padding-left: 10px;
   position: absolute;
   right: 15px;
@@ -480,7 +480,7 @@ h6 {
   text-align: center;
   font-weight: 700;
   position: relative;
-  font-family: 'Shrikhand', cursive;
+  font-family: 'brandon-grotesque';
 }
 
 .section-header p {

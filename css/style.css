@@ -1297,7 +1297,7 @@ h6 {
 
 #footer .footer-top .footer-info p {
 
-  font-size: 15px;
+  font-size: 18px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: 'brandon-grotesque';
@@ -1365,10 +1365,15 @@ h6 {
 
 #footer .footer-top .footer-contact p {
   line-height: 26px;
+  font-size: 20px;
 }
 
 #footer .footer-top .footer-newsletter {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+}
+#footer .footer-top .footer-newsletter p {
+  line-height: 26px;
+  font-size: 20px;
 }
 
 #footer .footer-top .footer-newsletter input[type="email"] {

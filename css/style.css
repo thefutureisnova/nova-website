@@ -544,6 +544,7 @@ h6 {
 }
 
 #about .about-content {
+  text-align: center;
   padding-top: 40px;
 }
 
@@ -552,6 +553,7 @@ h6 {
   font-family: 'brandon-grotesque';
   font-weight: 700;
   font-size: 36px;
+  text-align: center;
 }
 
 
@@ -560,6 +562,7 @@ h6 {
   font-weight: 400;
   font-size: 33px;
   padding-bottom: 16px;
+  text-align: center;
 }
 
 #about .about-content ul {

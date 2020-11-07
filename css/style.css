@@ -272,7 +272,7 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #EA5E5F;
+  background: #FFEAD5;
   color: #fff;
 }
 
@@ -533,6 +533,11 @@ h6 {
 
 .section-bg {
   background: #F6AB71;
+}
+
+
+.section-bg2 {
+  background: #FFEAD5;
 }
 
 /* About Us Section
@@ -1265,6 +1270,14 @@ h6 {
   content: "\f2c7" !important;
 }
 
+/* Changes the instagram grid section color */
+#section {
+  padding: 0 0 30px 0;
+  font-size: 14px;
+  background: #FFFF;
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1281,7 +1294,7 @@ h6 {
 }
 
 #footer .footer-top .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 #footer .footer-top .footer-info h3 {

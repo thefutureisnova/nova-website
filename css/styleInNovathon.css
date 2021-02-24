@@ -364,7 +364,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #FFEAD5;
+  color: #FFDF83;
   text-decoration: none;
 }
 
@@ -635,6 +635,13 @@ h6 {
   height: auto;
 }
 
+#about .img-two:hover {
+  filter: drop-shadow(10px 5px 2px #EF9794);
+  max-width: 50%;
+  max-height: ;
+  height: auto;
+}
+
 #about .about-img {
   position: relative;
   margin: 30px 30px 30px 30px;
@@ -675,16 +682,16 @@ h6 {
   transition: .5s;
 }
 
-/* Services Section
+/* Schedule Section
 --------------------------------*/
 
-#services {
+#schedule {
   padding: 60px 0 40px 0;
   background: #f5f8fd url("../img/inNovathonBackgroundReversed.png") center top no-repeat;
   background-size: cover;
 }
 
-#services .box {
+#schedule .box {
   padding: 30px;
   height: 350px;
   position: relative;
@@ -697,12 +704,12 @@ h6 {
   text-align: center;
 }
 
-#services .box:hover {
+#schedule .box:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-#services .icon {
+#schedule .icon {
   margin: 0 auto 15px auto;
   padding-top: 12px;
   display: inline-block;
@@ -712,31 +719,95 @@ h6 {
   height: 60px;
 }
 
-#services .icon i {
+#schedule .icon i {
   font-size: 36px;
   line-height: 1;
 }
 
-#services .title {
+#schedule .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 23px;
 }
 
-#services .title a {
+#schedule .title a {
   color: #111;
 }
 
-#services .box:hover .title a {
+#schedule .box:hover .title a {
   color: #eebb12;
 }
 
-#services .description {
+#schedule .description {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 0;
   text-align: left;
 }
+
+/* Sponsor Section
+--------------------------------*/
+
+#sponsors {
+  padding: 60px 0 40px 0;
+  background: #f5f8fd url("../img/inNovathonBackgroundSponsor.png") center top no-repeat;
+  background-size: cover;
+}
+
+#sponsors .box {
+  padding: 30px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #FFEAD5;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#sponsors .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#sponsors .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#sponsors .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+#sponsors .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+#sponsors .title a {
+  color: #111;
+}
+
+#sponsors .box:hover .title a {
+  color: #eebb12;
+}
+
+#sponsors .description {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
 
 /* Why Us Section
 --------------------------------*/

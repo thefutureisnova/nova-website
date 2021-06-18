@@ -1,0 +1,795 @@
+/*
+  Theme Name: Rapid
+  Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background: #FFEAD5;
+  color: #444;
+  font-family: 'brandon-grotesque';
+  font-size: 18px;
+}
+
+a {
+  color: #eebb12;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #eebb12;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-family: 'brandon-grotesque';
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p2s{
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-family: 'brandon-grotesque';
+  font-size: 29px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+}
+
+p2 {
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-family: 'brandon-grotesque';
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Shirkhand';
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+};
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'brandon-grotesque';
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.width-1 {
+  /* -ms-flex: 0 0 41.666667%; */
+  /* flex: 0 0 41.666667%; */
+  max-width: 30%;
+}
+.width-2 {
+  /* -ms-flex: 0 0 41.666667%; */
+  /* flex: 0 0 41.666667%; */
+  max-width: 25%;
+}
+.width-3 {
+  /* -ms-flex: 0 0 41.666667%; */
+  /* flex: 0 0 41.666667%; */
+  max-width: 10%;
+}
+
+/* testing grid layout */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(130px, auto);
+}
+.one {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2;
+}
+.four {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #eebb12;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #FFEAD5;
+}
+
+/* Prelaoder */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #FFEAD5;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #eebb12;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+
+#topbar {
+  padding: 0 0 10px 0;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+#topbar .social-links {
+  text-align: right;
+}
+
+#topbar .social-links a {
+  color: #535074;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+}
+
+#topbar .social-links a:hover {
+  color: #eebb12;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  height: 110px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled,
+#header.header-pages {
+  height: 70px;
+  padding: 15px 0;
+  background-color: #FFEAD5;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+#header.header-scrolled #topbar,
+#header.header-pages #topbar {
+  display: none;
+}
+
+#header .logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #413e66;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 7px 0;
+  max-height: 26px;
+}
+
+.main-pages {
+  margin-top: 60px;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f5f8fd url("../img/NovaBackground2.gif") center top no-repeat;
+  background-size: cover;
+}
+
+#intro .intro-info h2 {
+  color: #413e66;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#intro .intro-info h2 span {
+  color: #eebb12;
+}
+
+#intro .intro-info .btn-get-started,
+#intro .intro-info .btn-services {
+  font-family: 'brandon-grotesque';
+  font-size: large;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #FFEAD5;
+  color: #fff;
+}
+
+#intro .intro-info .btn-get-started:hover,
+#intro .intro-info .btn-services:hover {
+  background: #dfb4b4;
+}
+
+/*--------------------------------------------------------------
+# InNovathon Intro Section // TODO: Delete this section
+--------------------------------------------------------------*/
+
+#introInNovathon {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f5f8fd url("../img/collegeSeriesBackground2.png") center top no-repeat;
+  background-size: cover;
+}
+
+#introInNovathon .intro-info h2 {
+  color: #413e66;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#introInNovathon .intro-info h2 span {
+  color: #eebb12;
+}
+
+#introInNovathon .intro-info .btn-get-started,
+#introInNovathon .intro-info .btn-services {
+  font-family: 'brandon-grotesque';
+  font-size: large;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #FFEAD5;
+  color: #fff;
+}
+
+#introInNovathon .intro-info .btn-get-started:hover,
+#introInNovathon .intro-info .btn-services:hover {
+  background: #dfb4b4;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Desktop Navigation */
+
+.main-nav {
+  /* Drop Down */
+  /* Deep Drop Down */
+}
+
+.main-nav,
+.main-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.main-nav a {
+  display: block;
+  position: relative;
+  color: #413e66;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-family: 'brandon-grotesque';
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a {
+  color: #FFDF83;
+  text-decoration: none;
+}
+
+.main-nav .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+}
+
+.main-nav .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.main-nav .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.main-nav .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #065e77;
+}
+
+.main-nav .drop-down ul a:hover,
+.main-nav .drop-down ul .active > a,
+.main-nav .drop-down ul li:hover > a {
+  color: #eebb12;
+}
+
+.main-nav .drop-down > a:after {
+  content: "\f107";
+  font-family: 'brandon-grotesque';
+  padding-left: 10px;
+}
+
+.main-nav .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.main-nav .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.main-nav .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.main-nav .drop-down .drop-down > a:after {
+  content: "\f105";
+  position: absolute;
+  right: 15px;
+}
+
+/* Mobile Navigation */
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  left: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: rgba(40, 38, 70, 0.8);
+  transition: 0.4s;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+  color: #8dc2fa;
+  text-decoration: none;
+}
+
+.mobile-nav .drop-down > a:after {
+  content: "\f078";
+  font-family: 'brandon-grotesque';
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav .active.drop-down > a:after {
+  content: "\f077";
+}
+
+.mobile-nav .drop-down > a {
+  padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+  padding-left: 20px;
+}
+
+.mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  margin: 18px 18px 0 0;
+  color: #065e77;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(40, 38, 70, 0.8);
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+  font-size: 36px;
+  color: #413e66;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: 'brandon-grotesque';
+}
+
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  padding-bottom: 60px;
+  color: #535074;
+}
+
+.section-header h4 {
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: 'brandon-grotesque';
+}
+
+/* Section with background
+--------------------------------*/
+
+.section-bg {
+  background: #F6AB71;
+}
+
+
+.section-bg2 {
+  background: #FFEAD5;
+}
+
+/* About Us Section
+--------------------------------*/
+
+#about {
+  padding: 60px 0 40px 0;
+  background: #f5f8fd url("../img/collegeSeriesBackground1.png") center top no-repeat;
+  background-size: cover;
+}
+
+#about .about-content {
+  text-align: left;
+  padding-top: 40px;
+}
+
+#about .about-content h2 {
+  color: #413e66;
+  font-family: 'brandon-grotesque';
+  font-weight: 700;
+  font-size: 36px;
+  text-align: left;
+}
+
+
+#about .about-content h3 {
+  color: #413e66;
+  font-weight: 400;
+  font-size: 33px;
+  padding-bottom: 16px;
+  text-align: left;
+}
+
+#about .about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .about-content ul li {
+  padding-bottom: 10px;
+}
+
+#about .about-content ul li i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #D14B4C;
+}
+
+#about .img-two {
+  max-width: 50%;
+  max-height: ;
+  height: auto;
+}
+
+#about .img-two:hover {
+  filter: drop-shadow(10px 5px 2px #EF9794);
+  max-width: 50%;
+  max-height: ;
+  height: auto;
+}
+
+#about .about-img {
+  position: relative;
+}
+
+#about .about-img img {
+  width: 100%;
+  transition: .5s;
+}
+
+#about .about-img img:hover {
+  width: 100%;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+#about .about-img::before {
+  position: absolute;
+  left: -31px;
+  top: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #413e66;
+  transition: .5s;
+}
+
+#about .about-img::after {
+  position: absolute;
+  right: -31px;
+  bottom: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #413e66;
+  transition: .5s;
+}
+
+/* Schedule Section
+--------------------------------*/
+
+#event1, #event2, #event3 {
+  padding: 60px 0 40px 0;
+  background: #f5f8fd url("../img/collegeSeriesBackground2.png") center top no-repeat;
+  background-size: cover;
+}
+
+#schedule .box {
+  padding: 30px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #FFEAD5;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#schedule .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#schedule .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#schedule .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+#schedule .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+#schedule .title a {
+  color: #111;
+}
+
+#schedule .box:hover .title a {
+  color: #eebb12;
+}
+
+#schedule .description {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+
+@media (max-width: 574px) {
+  #footer .footer-top .social-links a {
+    margin-bottom: 25px;
+  }
+}

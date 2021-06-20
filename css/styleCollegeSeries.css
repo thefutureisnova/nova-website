@@ -724,6 +724,39 @@ h6 {
   transition: .5s;
 }
 
+#about .box {
+  padding: 50px;
+  width: 430px;
+  height: 243px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 50px 20px 40px 10px;
+  background: #FFEAD5 url("../img/event1Desc.png") center top no-repeat;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* #about .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+} */
+
+#about .description {
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 24px;
+  margin-top: -28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
 /* Schedule Section
 --------------------------------*/
 
@@ -735,7 +768,7 @@ h6 {
 
 #schedule .box {
   padding: 30px;
-  height: 350px;
+  height: 100px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;

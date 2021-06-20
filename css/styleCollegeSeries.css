@@ -694,6 +694,23 @@ h6 {
   transition: .5s;
 }
 
+#about .about-img-two {
+  margin: 30px;
+  position: right;
+}
+
+#about .about-img-two img {
+  height: 100%;
+  width: 100%;
+  transition: .5s;
+}
+
+#about .about-img-two img:hover {
+  width: 100%;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
 #about .about-img img:hover {
   width: 100%;
   -webkit-transform: scale(1.03);
@@ -724,32 +741,11 @@ h6 {
   transition: .5s;
 }
 
-#about .box {
-  padding: 50px;
-  width: 430px;
-  height: 243px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 50px 20px 40px 10px;
-  background: #FFEAD5 url("../img/event1Desc.png") center top no-repeat;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-}
 
-#about .description {
-  font-size: 16px;
-  color: #FFFFFF;
-  line-height: 24px;
-  margin-bottom: 0;
-  text-align: left;
-}
-
-/* Schedule Section
+/* Event Section
 --------------------------------*/
 #event1 {
-  padding: 130px 0 40px 0;
+  padding: 50px 0 40px 0;
 }
 
 #event2, #event3 {
@@ -757,61 +753,6 @@ h6 {
   background: #f5f8fd url("../img/collegeSeriesBackground2.png") center top no-repeat;
   background-size: cover;
 }
-
-#schedule .box {
-  padding: 30px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 0 10px 40px 10px;
-  background: #FFEAD5;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-}
-
-#schedule .box:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#schedule .icon {
-  margin: 0 auto 15px auto;
-  padding-top: 12px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-
-#schedule .icon i {
-  font-size: 36px;
-  line-height: 1;
-}
-
-#schedule .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 23px;
-}
-
-#schedule .title a {
-  color: #111;
-}
-
-#schedule .box:hover .title a {
-  color: #eebb12;
-}
-
-#schedule .description {
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 0;
-  text-align: left;
-}
-
 
 @media (max-width: 574px) {
   #footer .footer-top .social-links a {

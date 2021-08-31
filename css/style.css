@@ -243,9 +243,9 @@ h6 {
 
 #intro {
   width: 100%;
-  height: 95%;
+  height: 100vh;
   position: relative;
-  background: #f5f8fd url("../img/primarygradient.png") center top no-repeat;
+  background: #f5f8fd url("../img/NovaBackground2.gif") center top no-repeat;
   background-size: cover;
 }
 
@@ -279,16 +279,6 @@ h6 {
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
   background: #dfb4b4;
-}
-
-#intro a {
-  color: #D14B4C;
-  transition: 0.5s;
-}
-
-#intro a:hover {
-  color: #f5e2a4;
-  transition: 0.5s;
 }
 
 /*--------------------------------------------------------------
@@ -332,10 +322,6 @@ h6 {
 .main-nav li:hover > a {
   color: #eebb12;
   text-decoration: none;
-}
-
-.main-nav .img-fluid:hover {
-  filter: drop-shadow(1px 1px 1.5px #EF9794);
 }
 
 .main-nav .drop-down ul {
@@ -558,7 +544,7 @@ h6 {
 --------------------------------*/
 
 #about {
-  padding: 0px 0;
+  padding: 80px 0;
   background-color: #FFDF83;
 }
 
@@ -1651,43 +1637,6 @@ h6 {
   #testimonials .testimonial-item p {
     margin-left: 0;
   }
-}
-
-#intro .intro-content {
-  text-align: center;
-  padding-top: 100px;
-}
-
-#intro .intro-content h2 {
-  color: #413e66;
-  font-family: 'brandon-grotesque';
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-}
-
-
-#intro .intro-content h3 {
-  color: #413e66;
-  font-weight: 400;
-  font-size: 33px;
-  padding-bottom: 16px;
-  text-align: center;
-}
-
-#intro .intro-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-#intro .intro-content ul li {
-  padding-bottom: 10px;
-}
-
-#intro .intro-content ul li i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #D14B4C;
 }
 
 @media (max-width: 574px) {
